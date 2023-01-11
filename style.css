@@ -3,14 +3,14 @@
 body{
   margin: 0px;
   padding: 0px;
-  background-color: #0a0a22;
+  background-color: #000000;
 }
 
+
 .navbar{
-  background-color: #000000b5;
+  background-color: #000000;
   min-height: 70px;
   height: auto;
-  margin-bottom: 30px;
 }
 
 .navbar-brand{
@@ -52,12 +52,16 @@ body{
 
 
 
+.fondo{
+  background-color: #0a0a22;
+}
 
 .football-title-body{
   display: flex;
   color: white;
   text-transform: uppercase;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .football-title-body > h2{
@@ -111,6 +115,10 @@ footer{
 
 @media (max-width: 418px) {
   
+  .nav-link{
+    font-size: 14px;
+  }
+
   .football-footer-owner {
     width: 226px;
   }

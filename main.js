@@ -21,7 +21,7 @@ document.querySelector('#app').innerHTML = `
       </div>
     </nav>
   </div>
-  <div class="row col-12" id="matchs-cards">
+  <div class="fondo row col-12" id="matchs-cards">
 
     <div class="football-title-body">
       <h2>Partidos en vivo</h2>
