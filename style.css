@@ -1,0 +1,122 @@
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #0a0a22;
+}
+
+.navbar{
+  background-color: #000000b5;
+  min-height: 70px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.navbar-brand{
+  padding-left: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.collapse{
+  justify-content: end;
+}
+
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  padding-right: 55px;
+
+}
+
+.navbar-brand{
+  font-weight: 500;
+}
+
+.nav-link{
+  margin-left: 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover{
+  background-color: rgba(255, 255, 255, 0.13);
+}
+
+
+.row{
+  --bs-gutter-x: 0rem;
+}
+
+
+
+
+.football-title-body{
+  display: flex;
+  color: white;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.football-title-body > h2{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+.football-card-body{
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+footer{
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  margin-top: 30px;
+}
+  
+.football-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+
+.football-footer-owner{
+  border-top: 2px solid white;
+  height: 80px;
+  width: 368px;
+  background-color: black;
+}
+
+.football-footer-owner > p{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+
+
+@media (max-width: 418px) {
+  
+  .football-footer-owner {
+    width: 226px;
+  }
+
+  .football-footer-owner > p{
+    font-size: 19px;
+  }
+
+}

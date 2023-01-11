@@ -1,0 +1,201 @@
+
+.football-card-body{
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+.football-card{
+  display: grid;
+  grid-template-areas: 
+  "main-title main-title main-title"
+  "team-home vs-teams team-away";
+  grid-template-columns: 2fr 0.8fr 2fr;
+  height: 270px;
+  width: 500px;
+  background-color: #1f2228;
+  border-radius: 14px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 6px 8px 4px #0000006b;
+}
+
+.football-card-teams{
+  display: flex;
+  flex-direction: column;
+  background-color: #000000b5;
+  border-radius: 12px;
+  margin-top: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.football-card-title{
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.football-card-title > h3{
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.football-card-img{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.football-card-img > img{
+  width: 124px;
+  height: 111px;
+}
+
+.football-card-goals{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.football-card-goals > span{
+  font-size: 20px;
+  color: white;
+}
+
+.football-card-vs{
+  display: grid;
+  grid-template-rows: 60% 40%;
+  text-align: center;
+  color: white;
+  font-size: 31px;
+}
+
+.football-card-vs-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.football-card-vs-time{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.football-card-vs-time> span{
+  font-size: 15px;
+}
+
+.name-title{
+  height: 27px;
+  grid-area: main-title;
+}
+
+.name-title > h3{
+  font-size: 21px;
+  color: white;
+  text-align: center;
+}
+
+.name-title-home{
+  grid-area: team-home;
+}
+
+.name-vs{
+  grid-area: vs-teams;
+}
+
+.name-title-away{
+  grid-area: team-away;
+}
+
+
+
+@media (max-width: 538px) {
+  
+  .football-card{
+    width: 380px;
+  }
+
+  .name-title > h3{
+    font-size: 20px;
+  }
+
+  .football-card-title > h3{
+    font-size: 17px;
+  }
+
+  .football-card-vs-text{
+    font-size: 21px;
+  }
+
+}
+
+
+@media (max-width: 418px) {
+
+  .navbar-brand {
+    font-size: 17px;
+  }
+
+  .football-title-body > h2 {
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .name-team > h3{
+    font-size: 18px;
+  }
+
+  .football-card {
+    width: 322px;
+    height: 250px;
+  }
+
+  .football-card-title > h3{
+    font-size: 15px;
+  }
+
+  .football-card-img > img {
+    width: 114px;
+    height: 101px;
+  }
+
+}
+
+
+@media (max-width: 368px) {
+  
+  .navbar-brand{
+    font-size: 16px;
+  }
+
+  .football-title-body > h2 {
+    font-size: 16px;
+  }
+
+  .name-team > h3{
+    font-size: 15px;
+  }
+
+  .football-card-title > h3 {
+    font-size: 14px;
+  }
+
+  .football-card-img > img {
+    width: 102px;
+    height: 92px;
+  }
+
+  .football-card-vs-text {
+    font-size: 18px;
+  }
+
+
+}
