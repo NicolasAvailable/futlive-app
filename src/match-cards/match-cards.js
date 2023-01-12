@@ -25,7 +25,6 @@ export const matchCards = ( element) => {
         const matchInLive = data.map( matchs => {
 
             
-            
             template = `
             <div class="football-card">
 
@@ -70,13 +69,16 @@ export const matchCards = ( element) => {
 
             element.innerHTML += template;
         });
-    
+
         return matchInLive;
     }
     
     
     getTeamsLive().then(data => renderMatchs(data));
     
+    setInterval(() => {
+        getTeamsLive().then(data => renderMatchs(data));
+    }, 100000);
     
 }
 
